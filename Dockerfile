@@ -23,7 +23,9 @@ RUN         apk add --no-cache --upgrade \
                 -u "${BRUDI_UID}" \
                 -S \
                 -G "${BRUDI_USER}" \
-                "${BRUDI_USER}"
+                "${BRUDI_USER}" \
+            && mkdir -p /home/${BRUDI_USER}/.config/rclone \
+            && touch /home/${BRUDI_USER}/.config/rclone/rclone.conf
 
 USER        ${BRUDI_USER}
 WORKDIR /home/${BRUDI_USER}
