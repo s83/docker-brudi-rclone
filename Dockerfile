@@ -1,6 +1,6 @@
 FROM        postgres:16.1-alpine3.18
 
-LABEL       maintainer="Mittwald CM Service <https://github.com/mittwald>"
+LABEL       maintainer="s83 <https://github.com/s83>"
 
 ENV         BRUDI_USER="brudi" \
             BRUDI_GID="1000" \
