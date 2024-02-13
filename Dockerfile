@@ -7,7 +7,7 @@ ENV         BRUDI_USER="brudi" \
             BRUDI_UID="1000"
 
 COPY        --from=quay.io/mittwald/brudi:0.1 /usr/local/bin/brudi /usr/local/bin/brudi
-COPY        --from=restic/restic:0.11.0 /usr/bin/restic /usr/local/bin/restic
+COPY        --from=restic/restic:0.16.4 /usr/bin/restic /usr/local/bin/restic
 COPY        --from=redis:alpine /usr/local/bin/redis-cli /usr/local/bin/redis-cli
 
 RUN         apk add --no-cache --upgrade \
