@@ -2,7 +2,8 @@
 
 This repository provides a Docker image based on Alpine Linux that includes Brudi along with related dependencies such as Restic, Rclone, MariaDB/MySQL, and PostgreSQL binaries.
 
-[https://docker.com/r/sami/brudi-rclone](https://hub.docker.com/r/sami/brudi-rclone)
+Docker image: https://hub.docker.com/r/sami/brudi-rclone
+Source code: https://github.com/s83/docker-brudi-rclone
 
 ## Features
 
