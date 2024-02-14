@@ -36,6 +36,6 @@ jobs:
       uses: docker/build-push-action@v5.1.0
       with:
         push: true
-        tag: ${{ secrets.DOCKERHUB_USERNAME }}/brudi-rclone:${{ github.event.ref.replace('refs/tags/', '') }}
+        tag: ${{ secrets.DOCKERHUB_USERNAME }}/brudi-rclone:${{ github.ref_name }}
 
   
