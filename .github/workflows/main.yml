@@ -2,10 +2,10 @@ name: Build and Publish Docker Image
 
 on:
   push:
-    branches: [main]
-  tag_push:
-    paths:
-      - '*/' # Include all tags in any directory
+    branches:
+      - main
+    tags:
+      - 'v*' # Trigger on tags that start with 'v'
 
 jobs:
   build-and-publish:
