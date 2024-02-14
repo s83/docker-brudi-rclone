@@ -24,20 +24,8 @@ docker pull sami/brudi-rclone
 To run a container with the Brudi image, you can use the following command:
 
 ```bash
-docker run -d --name brudi-container sami/brudi-rclone
+docker run --it --rm --name brudi-container sami/brudi-rclone -- bash
 ```
-
-### Environment Variables
-
-The following environment variables can be used to configure the container:
-
-- **TODO**: Document any relevant environment variables here.
-
-### Volumes
-
-You may want to mount volumes to persist data or configuration files. The following directories are commonly used:
-
-- **TODO**: Document any relevant volumes here.
 
 ## Contributing
 
