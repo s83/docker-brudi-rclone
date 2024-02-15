@@ -22,11 +22,10 @@ jobs:
             ${{ secrets.DOCKERHUB_USERNAME }}/brudi-rclone
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=ref,event=branch
+            type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=sha            
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
