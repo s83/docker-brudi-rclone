@@ -8,7 +8,7 @@ ENV         BRUDI_USER="brudi" \
 
 COPY        --from=quay.io/mittwald/brudi:0.1 /usr/local/bin/brudi /usr/local/bin/brudi
 COPY        --from=restic/restic:0.16.4 /usr/bin/restic /usr/local/bin/restic
-COPY        --from=redis:alpine:7.2.4-alpine3.19 /usr/local/bin/redis-cli /usr/local/bin/redis-cli
+COPY        --from=redis:7.2.4-alpine3.19 /usr/local/bin/redis-cli /usr/local/bin/redis-cli
 
 RUN         apk add --no-cache --upgrade \
                 mysql-client \
