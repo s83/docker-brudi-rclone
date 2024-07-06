@@ -1,15 +1,15 @@
-# Add build-base package for compiling source code
-RUN apk add --no-cache --upgrade build-base
+# # Add build-base package for compiling source code
+# RUN apk add --no-cache --upgrade build-base
 
-# Clone the brudi source code from GitHub
-RUN git clone https://github.com/mittwald/brudi.git /tmp/brudi
+# # Clone the brudi source code from GitHub
+# RUN git clone https://github.com/mittwald/brudi.git /tmp/brudi
 
-# Build brudi from source for arm architecture
-WORKDIR /tmp/brudi
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm go build -o /usr/local/bin/brudi
+# # Build brudi from source for arm architecture
+# WORKDIR /tmp/brudi
+# RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm go build -o /usr/local/bin/brudi
 
-# Clean up the temporary directory
-RUN rm -rf /tmp/brudi
+# # Clean up the temporary directory
+# RUN rm -rf /tmp/brudi
 
 FROM        postgres:16.2-alpine3.19
 
