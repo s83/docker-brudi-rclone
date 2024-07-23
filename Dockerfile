@@ -51,6 +51,7 @@ RUN         apk add --no-cache --upgrade \
                 mysql-client \
                 rclone \
                 curl \
+                jq \
             && \
             addgroup \
                 -S "${BRUDI_USER}" \
