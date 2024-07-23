@@ -12,6 +12,8 @@ Source code: https://github.com/s83/docker-brudi-rclone
 - **Restic**: Fast, secure, efficient backup program.
 - **Rclone**: Command-line program for managing files on cloud storage.
 - **MariaDB/MySQL and PostgreSQL Binaries**: Popular relational database management systems.
+- **Redis Cli**: A command-line interface for Redis.
+- **Utilities Curl, Jq**: Command-line tools for making HTTP requests and processing JSON data.
 
 ## Usage
 
