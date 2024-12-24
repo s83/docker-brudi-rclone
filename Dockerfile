@@ -35,7 +35,7 @@ RUN go build -o brudi
 # CMD ["./brudi"]
 
 
-FROM        postgres:16.2-alpine3.19
+FROM        postgres:17.2-alpine
 
 LABEL       maintainer="s83 <https://github.com/s83>"
 
